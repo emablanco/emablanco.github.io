@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Emanuel Alejandro Blanco - Tecnico Software Libre" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link type="image/x-icon" href="public/image/codeico.png" rel="icon" />
+	<link href="https://fonts.googleapis.com/css?family=K2D:300|Rambla:700&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+	<link rel="stylesheet" href="public/css/style.css" />
+	<title>jfbaquerocelis</title>
+</head>
+<body>
+	<div class="loader">
+		<div class="loader__container">
+			<div class="loader__hexagon"></div>
+			<p class="loader__message">Loading...</p>
+		</div>
+	</div>
+
+	<div class="blanketBody"></div>
+
+	<div class="control-actions">
+		<span class="control-actions__menu"><i class="fas fa-hamburger"></i></span>
+	</div>
+
+	<div class="container-master">
+		<!-- Navbar for mobile and tablet views -->
+		<div class="myself__container__menu">
+			<div class="myself__data">
+				<div class="myself__data__container-avatar">
+					<div class="myself__data__avatar"></div>
+				</div>
+				<div class="myself__data__info">
+					<h4 class="myself__data__info__fullname">John Baquero Celis</h4>
+					<p class="myself__data__info__role">Tecnico Software Libre</p>
+				</div>
+			</div>
+
+			<ul class="myself__menu">
+				<a href="#home" class="myself__menu__link myself__menu__link--active">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+						</span>
+						Home
+					</li>
+				</a>
+				<a href="#welcome" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-lightbulb fa-stack-1x fa-inverse"></i>
+						</span>
+						About me
+					</li>
+				</a>
+				<!-- <a href="#portfolio" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+						</span>
+						My Portfolio
+					</li>
+				</a> -->
+				<a href="#experience" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fa fa-address-book fa-stack-1x fa-inverse"></i>
+						</span>
+						Past Experience
+					</li>
+				</a>
+				<a href="https://medium.com/@jfbaquerocelis" target="_blank" class="myself__menu__link">
+					<li class="myself__menu__item">
+						<span class="fa-stack fa-2x">
+							<i class="fas fa-square fa-stack-2x"></i>
+							<i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
+						</span>
+						Medium
+					</li>
+				</a>
+			</ul>
+		</div>
+
+		<!-- This is the main section (sidebar) where I'm showing the basic information about myself -->
+		<section class="container__myself">
+			<span class="myself__menu__action"><i class="fas fa-hamburger"></i></span>
+
+			<article class="myself">
+				<div class="myself__profile">
+					<div class="myself__container__avatar">
+						<div class="myself__avatar"></div>
+					</div>
+					<h1 class="myself__fullname">Emanuel Alejandro Blanco</h1>
+					<p class="myself__description">Tecnico Software Libre</p>
+					<p class="myself__description">Administrador de Servidores GNU/Linux</p>
+					<!-- <p class="myself__description">Organizador en <a href="http://meetup.com/monteriajs" class="jf-links myself__community" target="_blank">MonteríaJS</a></p> -->
+				</div>
+				<div class="myself__footer">
+					<div class="myself__footer__by">
+						<p>Made with <i class="fa fa-heart" style="color:#e75353;"></i></p>
+						<p>© 2022</p>
+					</div>
+					<div class="myself__footer__social">
+						<a class="myself__footer__link" href="https://co.linkedin.com/in/john-baquero-celis-68131a120" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a class="myself__footer__link" href="https://twitter.com/noverflow" target="_blank">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+						<a class="myself__footer__link" href="https://github.com/jfbaquerocelis" target="_blank">
+							<i class="fab fa-github-square"></i>
+						</a>
+						<a class="myself__footer__link" href="https://bitbucket.org/noverflow" target="_blank">
+							<i class="fab fa-bitbucket"></i>
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<!-- Main container -->
+		<section class="container__articles">
+			<!-- Menu bar -->
+			<nav class="menu">
+				<ul class="menu-list">
+					<a href="#welcome" class="menu-list__link menu-list__link--active">
+						<li class="menu-list__item">About me</li>
+					</a>
+					<!-- <a href="#portfolio" class="menu-list__link">
+						<li class="menu-list__item">My Portfolio</li>
+					</a> -->
+					<a href="#experience" class="menu-list__link">
+						<li class="menu-list__item">Past Experience</li>
+					</a>
+					<a href="https://medium.com/@jfbaquerocelis" target="_blank" class="menu-list__link">
+						<li class="menu-list__item"><i class="fab fa-medium"></i>Medium</li>
+					</a>
+				</ul>
+			</nav>
+
+			<article class="welcome article--show" id="welcome">
+				<h2 class="welcome__title">Welcome!</h2>
+				<p class="welcome__description">Mi nombre es <strong>Ema</strong> y actualmente estoy estudiando Ingeniería en Informática y Software Libre en la FICH - Facultad de Ingeniería y Ciencias Hídricas. Desde que descubrí el mundo del software libre hace algunos años, me ha fascinado la filosofía detrás de él y la idea de compartir conocimientos y herramientas de forma abierta y libre. Además de mis estudios, también soy un activista entusiasta del movimiento de software libre y participo regularmente en eventos y talleres para promover la cultura del código abierto y la libertad digital. Me considero una apasionada de la cultura maker y siempre estoy buscando nuevas formas de utilizar la tecnología para crear cosas interesantes y útiles. Desde la impresión 3D hasta la electrónica, siempre estoy explorando nuevas áreas y experimentando con diferentes herramientas y técnicas. En resumen, mi objetivo es utilizar mis conocimientos en ingeniería informática y software libre para contribuir al desarrollo de soluciones tecnológicas innovadoras y al mismo tiempo, fomentar una cultura de colaboración y libertad digital en la sociedad.
+                </p>
+				
+                <h2 class="welcome__title">Herramientas</h2>
+				
+                <p class="welcome__description">Durante mis años de estudio, he tenido la oportunidad de trabajar con diversas tecnologías y herramientas, lo que me ha permitido desarrollar habilidades y conocimientos en diferentes áreas.</p>
+
+				<div class="welcome__container-stack">
+					<!-- Frontend -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Frontend</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-html5" style="color:#f16529;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-css3-alt" style="color:#0170ba;"></i>
+							</div>
+                            <!--<div class="welcome__stack__tool">
+								<i class="fab fa-js" style="color:#ffe629;"></i>
+							</div>
+							 <div class="welcome__stack__tool">
+								<i class="fab fa-bootstrap" style="color:#563d7c;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-sass" style="color:#c6538c;"></i>
+							</div>
+							 <div class="welcome__stack__tool">
+								<i class="fab fa-ember" style="color:#E04E39;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-vuejs" style="color:#4fc08d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-react" style="color:#2196F3;"></i>
+                            </div>-->
+						</div>
+					</div>
+					<!-- Backend -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Habilidades</h4>
+						<div class="welcome__stack__tools">
+                            <!--<div class="welcome__stack__tool">
+								<i class="fab fa-node" style="color:#43853d;"></i>
+                            </div>-->
+							<div class="welcome__stack__tool">
+								<i class="fab fa-python" style="color:#3776ab;"></i>
+							</div>
+                            <!--<div class="welcome__stack__tool">
+								<i class="fab fa-npm" style="color:#ED1C24;"></i>
+                            </div>-->
+                            <!--<div class="welcome__stack__tool">
+								<i class="fab fa-yarn" style="color:#25799f;"></i>
+                            </div> -->
+
+							<div class="welcome__stack__tool">
+								<i class="fab fa-arduino" style="color:#0091e2;"></i>
+							</div>
+	
+							<div class="welcome__stack__tool">
+								<i class="fab fa-latex" style="color:#0091e2;"></i>
+							</div>
+	
+							<div class="welcome__stack__tool">
+								<i class="fab fa-c++" style="color:#0091e2;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-docker" style="color:#0091e2;"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Herramientas de Trabajo -->
+					<!-- <div class="welcome__stack">
+						<h4 class="welcome__stack__title">Gestión de proyectos</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-git-alt" style="color:#f64e27;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-trello" style="color:#0079bf;"></i>
+							</div>
+						</div>
+					</div> -->
+					<!-- Databases -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Databases</h4>
+						<div class="welcome__stack__tools">
+                            <!---<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="mongodb" />
+                            </div>-->
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="postgresql" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="mysql" />
+							</div>
+							<!-- <div class="welcome__stack__tool">
+								<img src="https://cdn.worldvectorlogo.com/logos/cockroachdb.svg" alt="cockroach" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" />
+                            </div>-->
+						</div>
+					</div>
+					<!-- Cloud Computing
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Cloud Computing</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-aws" style="color:#13aa52;"></i>
+							</div> 
+							<div class="welcome__stack__tool">
+								<i class="fab fa-digital-ocean" style="color:#0069ff;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-aws" style="color:#f19e39;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" />
+							</div>
+							 <div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="googlecloud" />
+							</div> -->
+							<!-- <div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" alt="zeithq" />
+							</div>
+							<div class="welcome__stack__tool">
+								<img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" alt="netlify" />
+                            </div>
+                        </div>
+                    </div>-->
+					<!-- Servidores -->
+					<div class="welcome__stack">
+						<h4 class="welcome__stack__title">Servidores</h4>
+						<div class="welcome__stack__tools">
+							<div class="welcome__stack__tool">
+								<i class="fab fa-linux" style="color:#2d2d2d;"></i>
+							</div>
+							<div class="welcome__stack__tool">
+								<i class="fab fa-debian" style="color:#e95420;"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="portfolio" id="portfolio">
+				<h2 class="portfolio__title">My Portfolio</h2>
+				<p class="portfolio__description">In this section you'll find all the projects which I've worked on, you'll find some proof and personal projects. All I know do with the tools that I use.</p>
+				<!-- <p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p> -->
+				<blockquote class="portfolio__blockquote">
+					<i class="portfolio__blockquote__icon far fa-lightbulb fa-2x" style="color:#555;"></i>
+					<p class="portfolio__blockquote__text">
+						You can find more information about my projects in my <strong>Github</strong> profile.
+					</p>
+				</blockquote>
+				<!-- <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>Bitbucket</strong>.</blockquote> -->
+
+				<section class="portfolio__works">
+					<!-- TAXADMINISTRADOR -->
+					<article class="portfolio__works__item" id="taxadministrador">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/taxadministrador.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								TAXADMINISTRADOR
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Web application focused on generating yellow cards for taxi drivers affiliated with the companies <strong>TELETAXI S.A.S.</strong> and <strong>RADIOTAXI LTDA.</strong></p>
+						<!-- <p class="portfolio__works__item__resume">Aplicación web enfocada en la generación de tarjetas de control para los taxistas afiliados a las empresas <strong>TELETAXI S.A.S.</strong> y <strong>RADIOTAXI LTDA.</strong></p> -->
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Full Stack Developer</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+								<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+								<i class="fab fa-js fa-lg" style="color:#ffeb00;background:#2d2d2d;"></i>
+							</div>
+						</div>
+					</article>
+
+					<!-- BUSSER -->
+					<article class="portfolio__works__item" id="busser">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/busser.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<a href="https://play.google.com/store/apps/details?id=com.metrosinu.busser.katana&hl=es" target="_blank" class="portfolio__works__item__header__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Es un sistema de movilidad urbana que permite a los usuarios del servicio de transporte público observar los buses, rutas y conductores en tiempo real a través de una aplicación móvil.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Backend</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+							</div>
+						</div>
+					</article>
+
+					<!-- YIPGO -->
+					<article class="portfolio__works__item" id="yipgo">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/yipgo.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								YIPGO
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Es una aplicación móvil enfocada al proyecto <strong>Última Milla</strong> de la empresa <strong>Metrosinú</strong> que permite a los operadores recibir en tiempo real servicios que son solicitados por los usuarios que requieran ser movilizados hacia el paradero más cercano.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Backend</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+							</div>
+						</div>
+					</article>
+
+					<!-- BUSSER DASHBOARD -->
+					<article class="portfolio__works__item" id="dashboard">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/dashboard.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<!-- BUSSER DASHBOARD -->
+								<a href="http://192.95.33.90/dashboard" target="_blank" class="portfolio__works__item__header__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Es una aplicación web que permite manejar la información principal de las aplicaciones móviles <strong>Busser</strong> y <strong>YipGO</strong> tales como rutas, calificaciones, dispositivos, etc. Permite al administrador crear nuevas rutas, paraderos, trayectos y observar métricas que ayudan a mejorar la operación.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Frontend</div>
+							<div>
+								<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
+							</div>
+						</div>
+					</article>
+
+					<!-- VRM -->
+					<article class="portfolio__works__item" id="vrm">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/vrm.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								VRM
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Es una aplicación web que se encarga de recolectar reportes, manejar sus estados y realizar métricas que buscan mejorar la calidad de los procesos. Ésta aplicación fue realizada para el área de mantenimiento de la empresa <strong>Metrosinú</strong>.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Full Stack</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								<i class="fab fa-sass fa-lg" style="color:#c6538c;"></i>
+								<i class="fab fa-html5 fa-lg" style="color:#e57f16;"></i>
+								<i class="fab fa-js fa-lg" style="color:#ffeb00;background-color: #2d2d2d;"></i>
+							</div>
+						</div>
+					</article>
+
+					<!-- MI PIE -->
+					<article class="portfolio__works__item" id="mipie">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/mipie.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<!-- MI PIE -->
+								<a href="https://mipie.funcentra.org" target="_blank" class="portfolio__works__item__header__title__link"><i class="fa fa-link"></i></a>
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Es una plataforma web para la admisión y control de pacientes que padecen diabetes, además permite calcular el grupo de riesgo en que el paciente se encuentra y a partir de esa información programar las próximas citas.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Full Stack</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+								<i class="fab fa-ember fa-lg" style="color:#E04E39;"></i>
+							</div>
+						</div>
+					</article>
+
+					<!-- MEDICALL24 -->
+					<article class="portfolio__works__item" id="medicall24">
+						<div class="portfolio__works__item__header">
+							<img src="public/image/Medicall24.png" class="portfolio__works__item__header__logo">
+							<h3 class="portfolio__works__item__header__title">
+								<!-- MEDICALL24 -->
+								<a href="https://play.google.com/store/apps/details?id=com.devandr.medicall.medicall24" target="_blank" class="portfolio__works__item__header__title__link"><i
+										class="fa fa-link"></i></a>
+							</h3>
+						</div>
+						<p class="portfolio__works__item__resume">Es un sistema enfocado a la telemedicina que busca por medio de una aplicación móvil la descongestión de las salas de urgencias en las clinicas y hospitales permitiendo al paciente realizar su consulta con un médico desde la comodidad de su casa.</p>
+						<div class="portfolio__works__tools">
+							<div class="portfolio__works__tools__role">Desarrollador Backend</div>
+							<div>
+								<i class="fab fa-node-js fa-lg" style="color:#026e00;"></i>
+							</div>
+						</div>
+					</article>
+				</section>
+			</article>
+
+			<article class="experience" id="experience">
+				<h2 class="experience__title">Employment History</h2>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Tecnico Software Libre |</span> EPAM Systems</h3>
+					<h5 class="experience__item__subtitle">Remote | July 2022 - September 2022</h5>
+					<div class="experience__item__description">
+						<p>Consolidated my knowledge about Clean Code, Clean Design, Cloud Computing, and Agile Mindset throughout the program EngX and CloudX getting a good performance on each assesment.</p>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Lead Software Developer</span> | Melt Studio</h3>
+					<h5 class="experience__item__subtitle">Remote | August 2019 - June 2022</h5>
+					<div class="experience__item__description">
+						<p>As Lead Software Developer in this company, I worked on many projects such as:</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">TOKEN METRICS | Senior Software Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Followed the SDLC using SCRUM as Agile Methodology for
+										planning, designing, building, testing, and deploying the Backend
+										and Frontend apps.</li>
+									<li>Implemented payment gateway using Stripe and worked on the
+										backend creating a REST API to provide to the platform the
+										resources.</li>
+									<li>Stack: Node.js, React.js, Snowflake, JIRA, GitHub, Filezilla, AWS
+										(EC2, S3, Cloudwatch, Route53), Terraform.</li>
+								</ul>
+							</li>
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">HAPPYLY | Lead Software Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Followed the SDLC using SCRUM as Agile Methodology for planning, designing, building, testing, and deploying the Backend and Frontend apps.</li>
+									<li>Worked on the new frontend design and refactored a legacy code to Nuxt.js.</li>
+									<li>We Implemented React Native to have the mobile application.</li>
+									<li>Worked on the back-end and refactored the REST API to v2 using Django REST Framework.</li>
+									<li>Stack: Python/Django, Vue.js/Nuxt.js, PostgreSQL, Asana, GitHub/Code Commit, Auto Deployment with Jenkins, and Servers on AWS (EC2, S3, CloudWatch).</li>
+								</ul>
+							</li>
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">HQIF | Full Stack Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Refactored the current front-end app using React.js and built the REST API on the back-end side using Node.js.</li>
+									<li>Reviewed the code of teammates and assisted them when they had blockers.</li>
+									<li>Worked on improving the performance of the app using design patterns and best practices of React.js.</li>
+								</ul>
+							</li>
+							<li class="experience__item__task-list__item">
+								<span class="experience__item__task-list__item__title">SUYO | Full Stack Developer</span>
+								<ul class="experience__item__task-list__item__sublist">
+									<li>Developed new features in the dashboard and the REST API.</li>
+									<li>Assisted the team when they had blockers.</li>
+									<li>Worked on improving the performance of the app using design patterns and best practices of React.js.</li>
+									<li>Stack: Python/Django, React.js, PostgreSQL, Pivotal Tracker, GitHub, AWS (EC2, S3).</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Backend Developer</span> | Medicall24</h3>
+					<h5 class="experience__item__subtitle">Montería | February 2018 - August 2019</h5>
+					<div class="experience__item__description">
+						<p>Worked on creating an API in Node.js for serving services and resources to the mobile application. Also, I worked on creating a real-time system using Socket.io.</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">Took the “Medicall24: Product Features” document and defined the features with their ETA. Defined the database schema and the flow data based on the features.</li>
+							<li class="experience__item__task-list__item">Worked on the back-end side, implementing Microservices for creating the REST API using Seneca.js. Implemented Twilio using the Programmable Video Feature to connect the mobile application.</li>
+							<li class="experience__item__task-list__item">Participated in meetings with the PM to discuss the current process and resolve doubts because this project was new.</li>
+							<li class="experience__item__task-list__item">Reviewed the code, merged those changes, and deployed it to alpha for testing.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Team Lead - Backend Developer</span> | Metrosinú</h3>
+					<h5 class="experience__item__subtitle">Montería | October 2016 - August 2017</h5>
+					<div class="experience__item__description">
+						<p>Worked on defining requirements for a mobile application called Busser and I developed the back-end side using Node.js creating an API, using Redis for sending pub/sub messages, and Socket.io for sending info in real-time.</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">Worked on the backend side implementing the REST API. Also, implemented a microsystem using Socket.io to provide the mobile application with the data.</li>
+							<li class="experience__item__task-list__item">Worked on the frontend side implementing a dashboard using Ember.js for checking in real time the current data throughout web sockets.</li>
+							<li class="experience__item__task-list__item">Participated in meetings with the customer to discuss the current process	and resolve doubts regarding the project.</li>
+							<li class="experience__item__task-list__item">Reviewed the code, merged those changes, and deployed it to alpha for testing.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="experience__item">
+					<h3 class="experience__item__title"><span class="experience__item__title__role">Full Stack Developer</span> | Teletaxi SAS</h3>
+					<h5 class="experience__item__subtitle">Montería | July 2015 - September 2016</h5>
+					<div class="experience__item__description">
+						<p>Developed an integral system called Taxadministrador built on Node.js using handlebars.js as a template engine.</p>
+
+						<ul class="experience__item__task-list">
+							<li class="experience__item__task-list__item">Developed an internal system to print control cards to the taxi drivers and	also generate reports, and trigger alerts about document expirations.</li>
+							<li class="experience__item__task-list__item">Worked on the back-end creating a REST API.</li>
+							<li class="experience__item__task-list__item">Worked on the dashboard using template rendering with Node.js.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <h2 class="contact__title">¿Quieres hacer parte de MonteríaJS?</h2>
+				<p class="contact__description">¡Excelente! <br> <br> Puedes escribirme y comentarme de qué forma quieres hacer parte de la comunidad, es decir, ya sea como speaker, colaborador, patrocinador o formar parte del equipo organizador. <br> Ten la plena seguridad que estaremos con los brazos abiertos esperando a que contribuyas con tus ideas y tus conocimientos a través de la comunidad para transmitirlo hacia todas las personas que disfrutan y asisten a nuestros eventos. <br> <br> Puedes seguirnos en nuestras redes sociales ¡Te esperamos!</p>
+
+				<div class="contact__social">
+					<a class="contact__social__link" href="https://instagram.com/monteriajs" target="_blank">
+						<i class="fab fa-instagram" style="color: palevioletred;"></i>
+					</a>
+					<a class="contact__social__link" href="https://twitter.com/monteriajs" target="_blank">
+						<i class="fab fa-twitter-square" style="color: #2196F3;"></i>
+					</a>
+					<a class="contact__social__link" href="https://facebook.com/monteriajs" target="_blank">
+						<i class="fab fa-facebook-square" style="color: #4267b2;"></i>
+					</a>
+					<a class="contact__social__link" href="https://github.com/monteriajs" target="_blank">
+						<i class="fab fa-github-square" style="color: #2d2d2d;"></i>
+					</a>
+					<a class="contact__social__link" href="https://meetup.com/monteriajs" target="_blank">
+						<i class="fab fa-meetup" style="color: #ED1C24;"></i>
+					</a>
+				</div> -->
+			</article>
+		</section>
+	</div>
+
+	<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
+	<script src="public/js/main.js"></script>
+</body>
+</html>
